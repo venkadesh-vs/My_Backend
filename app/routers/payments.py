@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 from typing import List
-from core.database import get_db
-from models.models import Payment, Customer, Credit
-from schemas.payment import PaymentCreate, PaymentResponse
+from app.core.database import get_db
+from app.models.models import Payment, Customer, Credit
+from app.schemas.payment import PaymentCreate, PaymentResponse
 from decimal import Decimal
 
 router = APIRouter(prefix="/api/payments", tags=["Payments"])
