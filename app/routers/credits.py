@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from typing import List
-from app.core.database import get_db
-from app.models.models import Credit, Customer
-from app.schemas.credit import CreditCreate, CreditResponse
+from core.database import get_db
+from models.models import Credit, Customer
+from schemas.credit import CreditCreate, CreditResponse
 
 router = APIRouter(prefix="/api/credits", tags=["Credits"])
 

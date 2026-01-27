@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends, Query
 from sqlalchemy.orm import Session
 from sqlalchemy import func, extract
-from app.core.database import get_db
-from app.models.models import Credit, Payment, Customer
-from app.schemas.dashboard import DashboardStatsResponse, DashboardChartsResponse
+from core.database import get_db
+from models.models import Credit, Payment, Customer
+from schemas.dashboard import DashboardStatsResponse, DashboardChartsResponse
 from decimal import Decimal
 from datetime import datetime
 

@@ -1,8 +1,8 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.core.database import engine, Base
-from app.core.config import CORS_ORIGINS
-from app.routers import auth, customers, credits, payments, dashboard, ledger
+from core.database import engine, Base
+from core.config import CORS_ORIGINS
+from routers import auth, customers, credits, payments, dashboard, ledger
 
 # Create all tables
 Base.metadata.create_all(bind=engine)
